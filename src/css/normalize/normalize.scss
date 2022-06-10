@@ -1,8 +1,11 @@
-// Сброс стилей 
+@import '../variables/variables.scss';
+// Сброс стилей
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
 }
 
 // Псевдо-элементы
@@ -31,8 +34,8 @@ li {
 
 // Ссылки
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 // Кнопки
@@ -43,7 +46,7 @@ button {
 
 // Контейнер
 .container {
-    max-width: 1266px;
-    width: 100%;
-    margin: 0 auto;
+  max-width: 1266px;
+  width: 100%;
+  margin: 0 auto;
 }
