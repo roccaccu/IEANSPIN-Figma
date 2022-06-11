@@ -1,14 +1,16 @@
+@import "../variable/variable.scss";
+
 .footer {
-  width: 100%;
   background-color: black;
   height: 890px;
   .wrapper-footer {
     display: flex;
     justify-content: space-between;
-    padding: 97px 87px 0 87px;
     color: white;
     max-width: 1280px;
+    width: 100%;
     margin: 0 auto;
+    padding-top: 97px;
     &__left {
       &-head {
         p {
@@ -63,14 +65,35 @@
   &__copyright {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 87px;
     margin-top: 230px;
     gap: 87px;
+
+    display: flex;
+    justify-content: space-between;
+    p {
+      font-weight: 400;
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.4);
+    }
+    display: flex;
     &-left {
       display: flex;
+      gap: 86px;
     }
-    p {
-      color: white;
+    &-right {
+      display: flex;
     }
+  }
+}
+
+// Header up
+.header-up {
+  padding: 45px 0;
+  h2 {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    font-weight: 400;
+    font-size: 46px;
   }
 }
