@@ -1,0 +1,63 @@
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  padding: 0.125rem 30px;
+  h3 {
+    font-weight: 400;
+    font-size: 114px;
+    color: #888888;
+  }
+  .carousel-element {
+    animation: slide-1 12s linear infinite;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+    min-width: 489px;
+  }
+  .carousel-element-2 {
+    animation: slide-2 12s linear infinite;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+    min-width: 585px;
+    padding: 70px 0;
+  }
+  .carousel-element-3 {
+    animation: slide-3 12s linear infinite;
+    transition: all 0.3s ease;
+    transform: translateX(0);
+    min-width: 659px;
+  }
+  .black {
+    color: $mainTextColor !important;
+  }
+}
+
+@keyframes slide-1 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-3 {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
