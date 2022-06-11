@@ -1,0 +1,28 @@
+@import "../variable/variable.scss";
+
+.authors {
+  margin-top: 185px;
+  display: flex;
+  gap: 136px;
+  margin-bottom: 100px;
+  &__left {
+    h3 {
+      width: 524px;
+      font-weight: 400;
+      font-size: 46px;
+      padding-top: 97px;
+      margin-bottom: 39px;
+    }
+  }
+  &__right {
+    h3 {
+      font-weight: 400;
+      font-size: 20px;
+      margin: 50px 0 30px 0;
+    }
+    &__signa {
+      display: flex;
+      gap: 50px;
+    }
+  }
+}
