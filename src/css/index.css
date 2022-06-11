@@ -101,6 +101,9 @@ button {
 }
 
 .carousel {
+  max-width: 3840px;
+  width: 100%;
+  margin: 0 auto;
   overflow: hidden;
   width: 100%;
   display: -webkit-box;
@@ -205,4 +208,104 @@ button {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
   }
+}
+.authors {
+  margin-top: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 136px;
+  margin-bottom: 100px;
+}
+.authors__left h3 {
+  width: 524px;
+  font-weight: 400;
+  font-size: 46px;
+  padding-top: 97px;
+  margin-bottom: 39px;
+}
+.authors__right h3 {
+  font-weight: 400;
+  font-size: 20px;
+  margin: 50px 0 30px 0;
+}
+.authors__right__signa {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.footer {
+  width: 100%;
+  background-color: black;
+  height: 890px;
+}
+.footer .wrapper-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 97px 87px 0 87px;
+  color: white;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.footer .wrapper-footer__left-head p {
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.footer .wrapper-footer__left-contact h2 {
+  font-weight: 400;
+  font-size: 65px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.footer .wrapper-footer__left-contact h2:hover {
+  color: #e8244f;
+}
+.footer .wrapper-footer__left-contact h2:first-child {
+  margin: 64px 0 20px 0;
+  width: 510px;
+}
+.footer .wrapper-footer__left-contact h2:last-child {
+  margin-bottom: 144px;
+  width: 488px;
+}
+.footer .wrapper-footer__left-adress {
+  font-weight: 400;
+  font-size: 20px;
+}
+.footer .wrapper-footer__left-adress p:first-child {
+  margin-bottom: 15px;
+}
+.footer .wrapper-footer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 43px;
+}
+.footer .wrapper-footer__right img {
+  width: 60px;
+  height: 60px;
+}
+.footer__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 87px;
+  margin-top: 230px;
+  gap: 87px;
+}
+.footer__copyright p {
+  color: white;
 }
