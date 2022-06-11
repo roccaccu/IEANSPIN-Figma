@@ -48,9 +48,15 @@
       display: flex;
       align-items: flex-end;
       gap: 43px;
-      img {
+      cursor: pointer;
+      svg {
         width: 60px;
         height: 60px;
+        fill: #fff;
+        transition: all 0.5s;
+      }
+      svg:hover {
+        fill: #e8244f;
       }
     }
   }
