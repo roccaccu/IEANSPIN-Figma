@@ -24,6 +24,7 @@
     }
     &-info {
       width: 834px;
+      margin-bottom: 8.25rem;
       h3 {
         width: 530px;
         font-size: 58px;
@@ -54,5 +55,40 @@
         }
       }
     }
+  }
+  &-carousel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transform: translateX(0%);
+    &__slide {
+      display: flex;
+      align-items: center;
+      animation: sliding 10s linear infinite;
+      gap: 54px;
+      h4 {
+        font-size: 114px;
+        line-height: 148px;
+        color: #181818;
+        transition: 0.3s linear;
+        &:last-child {
+          margin-right: 54px;
+        }
+        &:hover {
+          color: #e8244f;
+        }
+      }
+    }
+  }
+}
+
+@keyframes sliding {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
   }
 }
