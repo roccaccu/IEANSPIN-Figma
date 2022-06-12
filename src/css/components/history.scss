@@ -1,0 +1,67 @@
+.history {
+  max-width: 1296px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  &-header {
+    padding: 0.5px 15px 94px 15px;
+    width: 972px;
+    height: 338px;
+    h2 {
+      font-size: 114px;
+      line-height: 122px;
+      color: #000000;
+    }
+    margin-bottom: 45px;
+  }
+  &-profile {
+    width: 324px;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 45px;
+    &-item {
+      span {
+        display: block;
+        max-width: 278px;
+        width: 100%;
+        font-size: 11px;
+        line-height: 16px;
+        color: #000000;
+        margin-top: 13px;
+      }
+    }
+  }
+  &-text {
+    width: 648px;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 15px;
+    margin-bottom: 45px;
+    justify-content: center;
+    p {
+      display: flex;
+      max-width: 583px;
+      width: 100%;
+      font-size: 18px;
+      line-height: 23px;
+      color: #000000;
+      margin-bottom: 15px;
+    }
+  }
+  &-citation {
+    width: 648px;
+    height: 338px;
+    padding: 149px 59px 165px 65px;
+    margin-bottom: 45px;
+    span {
+      font-size: 17px;
+      line-height: 23px;
+      color: #000000;
+    }
+  }
+}

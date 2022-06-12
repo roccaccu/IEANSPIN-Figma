@@ -4,7 +4,7 @@
   background: black;
   padding: 1.5rem 4.5rem 5rem 55px;
   &-top {
-		margin-bottom: 2.5rem;
+    margin-bottom: 2.5rem;
     display: flex;
     justify-content: space-between;
     &__logo {
@@ -39,6 +39,17 @@
       flex-direction: column;
       // align-items: center;
       justify-content: center;
+      .spin {
+        cursor: pointer;
+        position: absolute;
+        left: 35px;
+        top: -10px;
+        width: 27px;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.2px;
+        color: #999999;
+      }
       h1 {
         font-size: 114px;
         color: #ffffff;
@@ -54,22 +65,22 @@
     }
   }
   &-bottom {
-		margin-top: 2.5rem;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     &-left {
       span {
         font-size: 20px;
-				line-height: 27px;
+        line-height: 27px;
         color: white;
       }
     }
     &-right {
-			padding-bottom: 10px;
-			display: flex;
-			flex-direction: column;
-			row-gap: 7px;
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
       span {
         font-size: 20px;
         color: #ffffff;
@@ -80,6 +91,10 @@
       }
     }
   }
+}
+
+.animate {
+  animation: circle 4s !important;
 }
 
 @keyframes circle {
