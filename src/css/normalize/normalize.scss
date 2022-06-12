@@ -49,4 +49,8 @@ button {
   max-width: $width;
   width: 100%;
   margin: 0 auto;
+
+  @media (max-width: 1340px) {
+    padding: 0 20px;
+  }
 }
