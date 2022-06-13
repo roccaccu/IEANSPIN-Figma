@@ -1,1 +1,19 @@
+// Плавная прокрутка страницы
+html {
+  scroll-behavior: smooth;
+}
+
+// Normalize
 @import "./normalize/normalize.scss";
+
+// Inspiracje
+@import "./components/inspiracje.scss";
+
+// Carousel
+@import "./components/carousel.scss";
+
+// Authors
+@import "./components/authors.scss";
+
+// Footer
+@import "./components/footer.scss";
