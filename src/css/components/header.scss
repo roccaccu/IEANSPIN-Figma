@@ -1,0 +1,119 @@
+@import "../variable/variable.scss";
+
+.header {
+  background: black;
+  padding: 1.5rem 4.5rem 5rem 55px;
+  &-top {
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    &__logo {
+      margin-top: 10px;
+    }
+    &-nav {
+      display: flex;
+      justify-content: center;
+      gap: 2.125rem;
+      &__item {
+        a {
+          font-size: 12px;
+          letter-spacing: 1px;
+          color: white;
+          transition: all 0.6s;
+        }
+        a:hover {
+          font-size: 12px;
+          letter-spacing: 1px;
+          color: #e8244f;
+        }
+      }
+    }
+  }
+  &-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 534px;
+    &-img {
+      position: absolute;
+      animation: circle 3s;
+    }
+    &-text {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      // align-items: center;
+      justify-content: center;
+      .spin {
+        cursor: pointer;
+        position: absolute;
+        left: 35px;
+        top: -30px;
+        width: 27px;
+        font-size: 11px;
+        line-height: 15px;
+        letter-spacing: 0.2px;
+        color: #999999;
+      }
+      h1 {
+        font-size: 114px;
+        color: #ffffff;
+      }
+      &-1 {
+        width: 1000px;
+        text-align: left;
+      }
+      &-2 {
+        width: 900px;
+        text-align: right;
+      }
+    }
+  }
+  &-bottom {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &-left {
+      span {
+        font-size: 20px;
+        line-height: 27px;
+        color: white;
+      }
+    }
+    &-right {
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+      span {
+        cursor: pointer;
+        font-size: 20px;
+        color: #ffffff;
+        transition: all 0.4s;
+      }
+      span:hover {
+        font-size: 20px;
+        color: #e8244f;
+      }
+      p {
+        font-size: 11px;
+        color: rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}
+
+.animate {
+  animation: circle 4s !important;
+}
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
