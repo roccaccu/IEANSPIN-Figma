@@ -3,7 +3,7 @@
 .menu {
   margin-top: 5.5rem;
   background: white;
-	margin-bottom: 10.25rem;
+  margin-bottom: 10.25rem;
   &-header {
     margin-bottom: 4.25rem;
     a {
@@ -22,38 +22,38 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-			transition: .3s linear;
+      transition: 0.3s linear;
       span {
         max-width: 396px;
-				width: 100%;
+        width: 100%;
         font-size: 46px;
         color: #000000;
       }
       p {
-				max-width: 356px;
-				width: 100%;
+        max-width: 356px;
+        width: 100%;
         font-size: 16px;
         color: #000000;
       }
-			a {
-				cursor: pointer;
-				width: 43px;
-				height: 43px;
-				background-image: url('/public/assets/images/svg/arrow.svg');
-				background-size: cover;
-			}
+      a {
+        cursor: pointer;
+        width: 43px;
+        height: 43px;
+        background-image: url("/public/assets/images/svg/arrow.svg");
+        background-size: cover;
+      }
       &:hover {
-				background: #000000;
-				padding: 0 20px;
-				span, p{
-					color: white;
-				}
-				a {
-					background-image: url('/public/assets/images/svg/arrow-w.svg');
-					background-size: cover;
-				}
-			}
+        background: #000000;
+        padding: 0 20px;
+        span,
+        p {
+          color: white;
+        }
+        a {
+          background-image: url("/public/assets/images/svg/arrow-w.svg");
+          background-size: cover;
+        }
+      }
     }
   }
 }
-

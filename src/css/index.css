@@ -74,6 +74,13 @@ button {
   font-size: 12px;
   letter-spacing: 1px;
   color: white;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+.header-top-nav__item a:hover {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #e8244f;
 }
 .header-main {
   position: relative;
@@ -110,7 +117,7 @@ button {
   cursor: pointer;
   position: absolute;
   left: 35px;
-  top: -10px;
+  top: -30px;
   width: 27px;
   font-size: 11px;
   line-height: 15px;
@@ -158,8 +165,15 @@ button {
   row-gap: 7px;
 }
 .header-bottom-right span {
+  cursor: pointer;
   font-size: 20px;
   color: #ffffff;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.header-bottom-right span:hover {
+  font-size: 20px;
+  color: #e8244f;
 }
 .header-bottom-right p {
   font-size: 11px;
@@ -253,7 +267,8 @@ button {
   background: #000000;
   padding: 0 20px;
 }
-.menu-links__item:hover span, .menu-links__item:hover p {
+.menu-links__item:hover span,
+.menu-links__item:hover p {
   color: white;
 }
 .menu-links__item:hover a {
@@ -305,6 +320,14 @@ button {
   line-height: 16px;
   color: #000000;
   margin-top: 13px;
+}
+.history-profile-item img {
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.history-profile-item img:hover {
+  opacity: 0.8;
 }
 .history-text {
   width: 648px;
@@ -374,10 +397,12 @@ button {
 
 .advice {
   background: black;
-  width: 100%;
   padding: 9rem 0 5.875rem 0;
 }
 .advice-main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
   padding: 0 4.5rem 0 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -396,11 +421,11 @@ button {
   -webkit-transform: 0.3s linear;
           transform: 0.3s linear;
   cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 .advice-main-list__item a:hover {
   color: #e8244f;
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
 }
 .advice-main-info {
   width: 834px;
@@ -429,11 +454,11 @@ button {
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .advice-main-info a:hover {
   color: #e8244f;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
   border-bottom: 1px solid #e8244f;
 }
 .advice-carousel {

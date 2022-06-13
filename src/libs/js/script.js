@@ -19,3 +19,4 @@ onSpin.addEventListener('click', function () {
   // burger.style.display = 'none'
   spinThis.classList.toggle('animate')
 })
+

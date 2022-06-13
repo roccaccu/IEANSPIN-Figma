@@ -1,8 +1,10 @@
 .advice {
   background: black;
-  width: 100%;
   padding: 9rem 0 5.875rem 0;
   &-main {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 4.5rem 0 4.5rem;
     display: flex;
     justify-content: space-between;
@@ -15,9 +17,9 @@
           color: #ffffff;
           transform: 0.3s linear;
           cursor: pointer;
+          transition: all 0.4s;
           &:hover {
             color: #e8244f;
-            transform: scale(1.02);
           }
         }
       }
@@ -48,9 +50,9 @@
         color: #ffffff;
         border-bottom: 1px solid #ffffff;
         cursor: pointer;
+        transition: all 0.3s;
         &:hover {
           color: #e8244f;
-          transform: scale(1.05);
           border-bottom: 1px solid #e8244f;
         }
       }
