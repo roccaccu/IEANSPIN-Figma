@@ -1,0 +1,19 @@
+.sponsors {
+  margin: 8.55rem 0 7.25rem 0;
+  padding: 0 15px;
+  span {
+    font-size: 10px;
+    letter-spacing: 0.44px;
+    text-transform: uppercase;
+    color: #e8244f;
+  }
+  &-list {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
