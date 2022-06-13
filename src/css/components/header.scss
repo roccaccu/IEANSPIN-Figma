@@ -37,7 +37,6 @@
     height: 534px;
     &-img {
       position: absolute;
-      animation: circle 3s;
     }
     &-text {
       position: absolute;
@@ -70,6 +69,7 @@
       }
     }
   }
+
   &-bottom {
     margin-top: 2.5rem;
     display: flex;
@@ -106,7 +106,8 @@
 }
 
 .animate {
-  animation: circle 4s !important;
+  animation: circle 2s ease-in-out !important;
+  animation-iteration-count: infinite;
 }
 
 @keyframes circle {
@@ -114,6 +115,6 @@
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(1080deg);
   }
 }

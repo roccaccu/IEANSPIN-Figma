@@ -104,8 +104,6 @@ button {
 }
 .header-main-img {
   position: absolute;
-  -webkit-animation: circle 3s;
-          animation: circle 3s;
 }
 .header-main-text {
   position: absolute;
@@ -188,8 +186,10 @@ button {
 }
 
 .animate {
-  -webkit-animation: circle 4s !important;
-          animation: circle 4s !important;
+  -webkit-animation: circle 2s ease-in-out !important;
+          animation: circle 2s ease-in-out !important;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
 @-webkit-keyframes circle {
@@ -198,8 +198,8 @@ button {
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
   }
 }
 
@@ -209,8 +209,8 @@ button {
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    -webkit-transform: rotate(1080deg);
+            transform: rotate(1080deg);
   }
 }
 .menu {
