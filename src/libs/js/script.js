@@ -16,6 +16,5 @@ const spinThis = document.querySelector('.header-main-img')
 const onSpin = document.querySelector('.spin')
 
 onSpin.addEventListener('click', function () {
-  // burger.style.display = 'none'
   spinThis.classList.toggle('animate')
 })
