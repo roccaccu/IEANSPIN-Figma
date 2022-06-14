@@ -1,3 +1,5 @@
+@import "../variable/media.scss";
+
 .advice {
   background: black;
   padding: 9rem 0 5.875rem 0;
@@ -5,11 +7,23 @@
     max-width: 1440px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 4.5rem 0 4.5rem;
+    padding: 0 4.5rem;
     display: flex;
     justify-content: space-between;
+    @media (max-width: $md) {
+      padding: 0 2rem;
+    }
+    @media (max-width: 630px) {
+      flex-direction: column;
+      padding: 0 3rem;
+    }
     &-list {
       margin: 15px 7.5px;
+      @media (max-width: 630px) {
+        display: flex;
+        gap: 30px;
+        margin-bottom: 40px;
+      }
       &__item {
         a {
           font-size: 14px;
@@ -21,7 +35,14 @@
           &:hover {
             color: #e8244f;
           }
+          @media (max-width: 725px) {
+            font-size: 16px;
+            line-height: 30px;
+          }
         }
+      }
+      @media (max-width: $lg) {
+        margin-right: 60px;
       }
     }
     &-info {
@@ -33,6 +54,10 @@
         line-height: 70px;
         color: #ffffff;
         margin-bottom: 49px;
+        @media (max-width: 725px) {
+          font-size: 50px;
+          line-height: 60px;
+        }
       }
       p {
         width: 416px;
@@ -40,6 +65,10 @@
         line-height: 26px;
         color: #ffffff;
         margin-bottom: 22px;
+        @media (max-width: 725px) {
+          font-size: 18px;
+          line-height: 24px;
+        }
       }
       a {
         display: block;
@@ -51,6 +80,11 @@
         border-bottom: 1px solid #ffffff;
         cursor: pointer;
         transition: all 0.3s;
+        @media (max-width: 725px) {
+          font-size: 18px;
+          line-height: 34px;
+          width: 160px;
+        }
         &:hover {
           color: #e8244f;
           border-bottom: 1px solid #e8244f;
@@ -74,6 +108,10 @@
         line-height: 148px;
         color: #181818;
         transition: 0.3s linear;
+        @media (max-width: 725px) {
+          font-size: 100px;
+          line-height: 140px;
+        }
         &:last-child {
           margin-right: 54px;
         }

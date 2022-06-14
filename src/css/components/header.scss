@@ -2,11 +2,18 @@
 
 .header {
   background: black;
-  padding: 1.5rem 4.5rem 5rem 55px;
+  padding: 1.5rem 0 5rem 0;
   &-top {
     margin-bottom: 2.5rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    .burger {
+      background-color: red;
+      display: none;
+      @media (max-width: 635px) {
+      }
+    }
     &__logo {
       margin-top: 10px;
     }
@@ -27,6 +34,9 @@
           color: #e8244f;
         }
       }
+      @media (max-width: 636px) {
+        display: none;
+      }
     }
   }
   &-main {
@@ -35,8 +45,14 @@
     justify-content: center;
     align-items: center;
     height: 534px;
+    img {
+      @media (max-width: 579px) {
+        width: 400px;
+      }
+    }
     &-img {
       position: absolute;
+      animation: circle-reload 2s ease-in-out !important;
     }
     &-text {
       position: absolute;
@@ -45,19 +61,41 @@
       // align-items: center;
       justify-content: center;
       .spin {
+        display: flex;
+        align-items: center;
+        gap: 10px;
         cursor: pointer;
-        position: absolute;
-        left: 35px;
-        top: -30px;
-        width: 27px;
-        font-size: 11px;
+      }
+      img {
+        width: 15px;
+      }
+      p {
+        font-size: 14px;
         line-height: 15px;
         letter-spacing: 0.2px;
         color: #999999;
       }
+
       h1 {
+        max-width: 940px;
         font-size: 114px;
         color: #ffffff;
+        @media (max-width: 1120px) {
+          font-size: 90px;
+          max-width: 800px;
+        }
+        @media (max-width: 920px) {
+          font-size: 70px;
+          max-width: 680px;
+        }
+        @media (max-width: 755px) {
+          font-size: 65px;
+          max-width: 520px;
+        }
+        @media (max-width: 596px) {
+          font-size: 50px;
+          max-width: 400px;
+        }
       }
       &-1 {
         width: 1000px;
@@ -75,11 +113,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
     &-left {
       span {
         font-size: 20px;
         line-height: 27px;
         color: white;
+        @media (max-width: 1214px) {
+          font-size: 15px;
+        }
+        @media (max-width: 920px) {
+          font-size: 13px;
+        }
+        @media (max-width: 920px) {
+          font-size: 12px;
+        }
       }
     }
     &-right {
@@ -92,6 +145,9 @@
         font-size: 20px;
         color: #ffffff;
         transition: all 0.4s;
+        @media (max-width: 920px) {
+          font-size: 16px;
+        }
       }
       span:hover {
         font-size: 20px;
@@ -107,10 +163,18 @@
 
 .animate {
   animation: circle 2s ease-in-out !important;
-  animation-iteration-count: infinite;
 }
 
 @keyframes circle {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+
+@keyframes circle-reload {
   0% {
     transform: rotate(0deg);
   }

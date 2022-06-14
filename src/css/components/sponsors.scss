@@ -1,3 +1,5 @@
+@import "../variable/media.scss";
+
 .sponsors {
   margin: 8.55rem 0 7.25rem 0;
   padding: 0 15px;
@@ -6,14 +8,36 @@
     letter-spacing: 0.44px;
     text-transform: uppercase;
     color: #e8244f;
+    @media (max-width: $lg) {
+      font-size: 12px;
+    }
   }
   &-list {
-    max-width: 1140px;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 4rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    @media (max-width: $md) {
+      display: flex;
+    }
+    &-block {
+      max-width: 1140px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 4rem;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @media (max-width: $lg) {
+        margin-top: 3.5rem;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3.5rem;
+      }
+      @media (max-width: $md) {
+        margin-top: 3rem;
+        flex-wrap: wrap;
+        justify-content: left;
+        align-content: space-between;
+        gap: 3rem;
+        display: flex;
+      }
+    }
   }
 }

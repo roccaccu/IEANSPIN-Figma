@@ -16,10 +16,14 @@
     padding-top: 97px;
     &__left {
       &-head {
+        display: flex;
         p {
           font-weight: 400;
           font-size: 10px;
           text-transform: uppercase;
+          @media (max-width: 549px) {
+            font-size: 7px;
+          }
         }
       }
       &-contact {
@@ -32,17 +36,20 @@
           @media (max-width: 805px) {
             font-size: 50px;
           }
+          @media (max-width: 549px) {
+            width: 10px;
+            font-size: 40px;
+          }
         }
         h2:hover {
           color: #e8244f;
         }
         h2:first-child {
           margin: 64px 0 20px 0;
-          width: 510px;
         }
         h2:last-child {
           margin-bottom: 144px;
-          width: 488px;
+          width: 377px;
         }
       }
       &-adress {
@@ -53,6 +60,9 @@
         }
         p:first-child {
           margin-bottom: 15px;
+        }
+        @media (max-width: 549px) {
+          font-size: 13px;
         }
       }
     }
@@ -65,6 +75,9 @@
       }
       @media (max-width: 690px) {
         flex-direction: column-reverse;
+      }
+      @media (max-width: 610px) {
+        display: none;
       }
       cursor: pointer;
       svg {
@@ -89,13 +102,16 @@
       font-weight: 400;
       font-size: 12px;
       color: rgba(255, 255, 255, 0.4);
+      @media (max-width: 549px) {
+        font-size: 9px;
+      }
     }
     display: flex;
     &-left {
       display: flex;
       gap: 86px;
       @media (max-width: 745px) {
-        gap: 45px;
+        gap: 25px;
       }
     }
     &-right {

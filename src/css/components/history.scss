@@ -1,9 +1,14 @@
+@import "../variable/media.scss";
+@import "../variable/media.scss";
 .history {
   max-width: 1296px;
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
+  @media (max-width: 1300px) {
+    justify-content: space-around;
+  }
   &-header {
     padding: 0.5px 15px 94px 15px;
     width: 972px;
@@ -12,8 +17,22 @@
       font-size: 114px;
       line-height: 122px;
       color: #000000;
+      @media (max-width: 1300px) {
+        font-size: 112px;
+      }
+      @media (max-width: $lg) {
+        font-size: 110px;
+      }
+      @media (max-width: $md) {
+        font-size: 100px;
+      }
     }
     margin-bottom: 45px;
+    @media (max-width: 1300px) {
+      margin-bottom: 10px;
+      height: 300px;
+      width: 900px;
+    }
   }
   &-profile {
     width: 324px;
@@ -22,6 +41,11 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 45px;
+    @media (max-width: 1300px) {
+      width: 287px;
+      height: 300px;
+      margin-bottom: 10px;
+    }
     &-item {
       span {
         display: block;
@@ -35,6 +59,9 @@
       img {
         cursor: pointer;
         transition: all 0.3s;
+        @media (max-width: 1300px) {
+          width: 250px;
+        }
       }
       img:hover {
         opacity: 0.8;
@@ -50,6 +77,18 @@
     padding-left: 15px;
     margin-bottom: 45px;
     justify-content: center;
+    @media (max-width: 1300px) {
+      width: 600px;
+      height: 300px;
+      margin-bottom: 10px;
+    }
+    @media (max-width: $lg) {
+      padding-left: 10px;
+      width: 500px;
+    }
+    @media (max-width: $md) {
+      width: 400px;
+    }
     p {
       display: flex;
       max-width: 583px;
@@ -65,10 +104,29 @@
     height: 338px;
     padding: 149px 59px 165px 65px;
     margin-bottom: 45px;
+    @media (max-width: 1300px) {
+      margin-bottom: 10px;
+      width: 600px;
+      height: 300px;
+    }
+    @media (max-width: $lg) {
+      padding: 140px 50px 160px 60px;
+      width: 500px;
+    }
+    @media (max-width: $md) {
+      padding: 120px 20px 140px 20px;
+      width: 400px;
+    }
     span {
       font-size: 17px;
       line-height: 23px;
       color: #000000;
     }
+  }
+}
+
+#empty-file {
+  @media (max-width: $lg) {
+    display: none;
   }
 }
