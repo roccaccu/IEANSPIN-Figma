@@ -34,7 +34,6 @@
         <li class="header-top-nav__item">
           <a href="#">KONTAKT</a>
         </li>
-        
       </ul>
       <div class="burger"></div>
     </nav>
@@ -458,4 +457,14 @@
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+</script>
+
+<!-- Header spin -->
+<script>
+  const spinThis = document.querySelector('.header-main-img')
+  const onSpin = document.querySelector('.spin')
+
+  onSpin.addEventListener('click', function () {
+  spinThis.classList.toggle('animate')
+})
 </script>
