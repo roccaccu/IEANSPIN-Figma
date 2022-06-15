@@ -27,9 +27,20 @@
         @media (max-width: 1341px) {
           font-size: 24px;
         }
+        @media (max-width: 491px) {
+          font-size: 18px;
+        }
       }
       .inspiracje__book-img {
         cursor: pointer;
+        img {
+          @media (max-width: 704px) {
+            width: 350px;
+          }
+          @media (max-width: 491px) {
+            width: 300px;
+          }
+        }
       }
       .inspiracje__book-img:hover {
         opacity: 0.8;
@@ -47,6 +58,9 @@
 
           @media (max-width: 1341px) {
             font-size: 16px;
+          }
+          @media (max-width: 491px) {
+            font-size: 13px;
           }
         }
       }
@@ -71,9 +85,20 @@
           @media (max-width: 1341px) {
             font-size: 24px;
           }
+          @media (max-width: 491px) {
+            font-size: 18px;
+          }
         }
         .inspiracje__book-img {
           cursor: pointer;
+          img {
+            @media (max-width: 704px) {
+              width: 350px;
+            }
+            @media (max-width: 491px) {
+              width: 300px;
+            }
+          }
         }
         .inspiracje__book-img:hover {
           opacity: 0.8;
@@ -92,8 +117,12 @@
             @media (max-width: 1341px) {
               font-size: 16px;
             }
+            @media (max-width: 491px) {
+              font-size: 13px;
+            }
           }
         }
+
         &-title {
           .wrapper {
             margin: 3.125rem 0 2.313rem 4.563rem;
@@ -111,6 +140,9 @@
               @media (max-width: 1036px) {
                 font-size: 85px;
               }
+              @media (max-width: 499px) {
+                font-size: 75px;
+              }
             }
             .inspiracje-sub-title {
               p {
@@ -120,13 +152,18 @@
                 @media (max-width: 1341px) {
                   font-size: 24px;
                 }
+                @media (max-width: 626px) {
+                  font-size: 18px;
+                }
+                @media (max-width: 499px) {
+                  font-size: 15px;
+                }
               }
             }
           }
         }
         .inspiracje-quote {
           p {
-            width: 29.188rem;
             font-weight: 400;
             margin: 11.125rem 8.5rem 0 0.938rem;
             font-size: 1.25rem;
@@ -136,6 +173,12 @@
             }
             @media (max-width: 1341px) {
               font-size: 27px;
+            }
+            @media (max-width: 502px) {
+              margin: 0;
+            }
+            @media (max-width: 491px) {
+              font-size: 18px;
             }
           }
         }
