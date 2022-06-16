@@ -64,7 +64,7 @@
         cursor: pointer;
         width: 43px;
         height: 43px;
-        background-image: url("/public/assets/images/svg/arrow.svg");
+        background-image: url("../../../public/assets/images/svg/arrow.svg");
         background-size: cover;
       }
       &:hover {
@@ -78,7 +78,7 @@
           color: white;
         }
         a {
-          background-image: url("/public/assets/images/svg/arrow-w.svg");
+          background-image: url("../../../public/assets/images/svg/arrow-w.svg");
           background-size: cover;
         }
       }
